@@ -3,11 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Tech-Teo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tech-Teo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+      </ul>
+      <form class="d-flex gap-2" role="search">
+        <input class="form-control" type="search" placeholder="Search" id="search">
+        <select class="form-select" id="category">
+          <option id="todos">Todas</option>
+          <option id="pcs">PCs</option>
+          <option id="celulares">Celulares</option>
+          <option id="notebooks">Notebooks</option>
+        </select>
+        <button class="btn btn-outline-success" type="button" id="btnRender">Renderizar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+<h1>Produtos:</h1>
+<div id="product-details"></div>
+<div id="product-list">
+  <div id="sec-pcs">
+    <h1>PCs:</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/pc1.webp" class="card-img-top" alt="PC 1">
+          <div class="card-body">
+            <h5 class="card-title">PC Gamer i9</h5>
+            <p class="card-text">Intel Core i9, RTX 4080, 32GB RAM, SSD 1TB.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/pc2.webp" class="card-img-top" alt="PC 2">
+          <div class="card-body">
+            <h5 class="card-title">PC Home Office</h5>
+            <p class="card-text">Ryzen 7, 16GB RAM, SSD 512GB. Ideal para trabalho.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/pc3.webp" class="card-img-top" alt="PC 3">
+          <div class="card-body">
+            <h5 class="card-title">PC Creator Studio</h5>
+            <p class="card-text">Core i7, RTX 4070, 32GB RAM. Para criadores de conteúdo.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sec-celulares">
+    <h1>Celulares:</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/celular1.webp" class="card-img-top" alt="Celular 1">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S24</h5>
+            <p class="card-text">Snapdragon 8 Gen 3, câmera 200MP, 5000mAh.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/celular2.webp" class="card-img-top" alt="Celular 2">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 15 Pro</h5>
+            <p class="card-text">Chip A17 Pro, câmera 48MP, design em titânio.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/celular3.webp" class="card-img-top" alt="Celular 3">
+          <div class="card-body">
+            <h5 class="card-title">Motorola Edge 40</h5>
+            <p class="card-text">pOLED 144Hz, 50MP, carregamento 68W.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sec-notebooks">
+    <h1>Notebooks:</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/notebooks1.webp" class="card-img-top" alt="Notebook 1">
+          <div class="card-body">
+            <h5 class="card-title">Dell XPS 15</h5>
+            <p class="card-text">OLED 3.5K, Core i7, RTX 4060, 16GB RAM.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/notebooks2.webp" class="card-img-top" alt="Notebook 2">
+          <div class="card-body">
+            <h5 class="card-title">MacBook Air M3</h5>
+            <p class="card-text">Chip M3, Retina 15", bateria de até 18 horas.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/notebooks3.webp" class="card-img-top" alt="Notebook 3">
+          <div class="card-body">
+            <h5 class="card-title">Lenovo LOQ Gamer</h5>
+            <p class="card-text">Ryzen 7, RTX 4060, tela 144Hz, 16GB RAM.</p>
+            <button class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="card-footer"><small class="text-body-secondary">Em estoque</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</script>
+<script src="script.js"></script>
 </body>
 </html>
